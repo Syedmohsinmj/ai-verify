@@ -295,3 +295,9 @@ div[data-testid="stTextInput"] div[data-baseweb="input"]:focus-within {
     border-radius: 9px !important;
     box-shadow: 0 0 0 2px #111827 !important;
 }
+[data-testid="stText"],
+[data-testid="stText"] pre {
+  color: #17243b !important;
+  background-color: #f8fbff !important;
+  opacity: 1 !important;
+}
