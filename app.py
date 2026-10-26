@@ -928,7 +928,7 @@ with tab_upload:
                 with st.expander(
                     "Show extracted text, file details and processing notes"
                 ):
-                    st.text(doc["text"][:12000] or "No text extracted.")
+                    st.code(doc["text"][:12000] or "No text extracted.", language=None)
                     st.json({
                         key: value
                         for key, value in doc["metadata"].items()
