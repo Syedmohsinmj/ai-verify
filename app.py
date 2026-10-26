@@ -219,7 +219,12 @@ h1, h2, h3, p, label,
 }
 </style>
 """, unsafe_allow_html=True)
-
+CSS_FILE = Path(__file__).with_name("style.css")
+if CSS_FILE.is_file():
+    st.markdown(
+        f"<style>{CSS_FILE.read_text(encoding='utf-8')}</style>",
+        unsafe_allow_html=True,
+    )
 
 def load_json(path, fallback):
     try:
