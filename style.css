@@ -301,3 +301,31 @@ div[data-testid="stTextInput"] div[data-baseweb="input"]:focus-within {
   background-color: #f8fbff !important;
   opacity: 1 !important;
 }
+/* White dropdowns and menus */
+[data-baseweb="select"] > div,
+[role="listbox"],
+[role="option"] {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* White uploaded-file area and file chip */
+[data-testid="stFileUploader"] section,
+[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* White document heading bars */
+[data-testid="stExpander"] details > summary {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* White extracted-text box with black text */
+[data-testid="stCode"],
+[data-testid="stCode"] pre,
+[data-testid="stCode"] code {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
