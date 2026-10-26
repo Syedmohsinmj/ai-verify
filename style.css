@@ -329,3 +329,12 @@ div[data-testid="stTextInput"] div[data-baseweb="input"]:focus-within {
   background: #ffffff !important;
   color: #111111 !important;
 }
+[data-testid="stSelectbox"] [data-baseweb="select"] > div {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid #8893a3 !important;
+}
+
+[data-testid="stSelectbox"] [data-baseweb="select"] * {
+  color: #111111 !important;
+}
