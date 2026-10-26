@@ -1,0 +1,27 @@
+{
+  "notice": "All records in this file are fictional test data. They are not sourced from AICTE and must never be presented as official approvals.",
+  "records": [
+    {
+      "institute_id": "DEMO-PID-001",
+      "institution_name": "Demo Technical Institute",
+      "registration_number": "DEMO-REG-001",
+      "academic_year": "2025-26",
+      "approval_status": "Synthetic demo record: sample status only",
+      "approved_courses": [
+        "B.Tech Computer Science"
+      ],
+      "approved_intake": 60
+    },
+    {
+      "institute_id": "DEMO-PID-002",
+      "institution_name": "Example Engineering College",
+      "registration_number": "DEMO-REG-002",
+      "academic_year": "2025-26",
+      "approval_status": "Synthetic demo record: sample status only",
+      "approved_courses": [
+        "B.Tech Mechanical Engineering"
+      ],
+      "approved_intake": 60
+    }
+  ]
+}

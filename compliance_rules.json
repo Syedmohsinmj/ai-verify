@@ -1,0 +1,63 @@
+{
+  "notice": "Prototype demo checklist. The categories and document lists below are illustrative examples based on the problem statement, not an official AICTE checklist. Replace them with requirements confirmed from the applicable AICTE handbook and authorized instructions.",
+  "categories": {
+    "Extension of Approval (EoA)": {
+      "required_fields": [
+        "Institution name",
+        "Institute ID",
+        "Registration number",
+        "Academic year"
+      ],
+      "required_documents": [
+        "Application form",
+        "Previous EoA / approval",
+        "TER payment proof"
+      ]
+    },
+    "New technical institution": {
+      "required_fields": [
+        "Institution name",
+        "Institute ID",
+        "Course",
+        "Academic year"
+      ],
+      "required_documents": [
+        "Application form",
+        "NOC / permission",
+        "Infrastructure photograph",
+        "Faculty records"
+      ]
+    },
+    "Approval-related change": {
+      "required_fields": [
+        "Institution name",
+        "Institute ID",
+        "Application reference",
+        "Academic year"
+      ],
+      "required_documents": [
+        "Application form",
+        "Previous EoA / approval",
+        "NOC / permission"
+      ]
+    },
+    "Infrastructure / compliance review (demo)": {
+      "required_fields": [
+        "Institution name",
+        "Institute ID",
+        "Academic year",
+        "Built-up area",
+        "Laboratory count",
+        "Library books",
+        "Faculty count"
+      ],
+      "required_documents": [
+        "Application form",
+        "Infrastructure photograph",
+        "Floor plan",
+        "Building / safety certificate",
+        "Faculty records"
+      ]
+    }
+  }
+}

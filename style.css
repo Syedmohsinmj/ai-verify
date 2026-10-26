@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap");
+
+/* Base font: avoid overriding Streamlit's icon fonts */
+html, body, .stApp, p, label, input, textarea, button,
+h1, h2, h3, h4, [data-testid="stMarkdownContainer"] {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+}
+
+/* Main page */
+.stApp {
+  color: #17243b !important;
+  background: #f4f7fb !important;
+}
+
+.block-container {
+  max-width: 1380px;
+  padding: 2rem 2.6rem 4rem;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+  background: #edf3fa !important;
+  border-right: 1px solid #d5dfeb !important;
+}
+
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
+  color: #17243b !important;
+}
+
+/* Sidebar dropdowns */
+[data-testid="stSidebar"] [data-baseweb="select"] > div {
+  background: #ffffff !important;
+  border: 1px solid #bdcadd !important;
+}
+
+[data-testid="stSidebar"] [data-baseweb="select"] *,
+[data-testid="stSidebar"] [data-baseweb="select"] input {
+  color: #17243b !important;
+  -webkit-text-fill-color: #17243b !important;
+}
+
+/* Header */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 32px 38px;
+  margin: 4px 0 22px;
+  border-radius: 22px;
+  color: #ffffff !important;
+  background: linear-gradient(115deg, #173b68, #2458a6 58%, #118a91);
+  box-shadow: 0 16px 38px rgba(36, 76, 130, .16);
+}
+
+.hero h1 {
+  margin: 0;
+  color: #ffffff !important;
+  font-family: "Manrope", "Segoe UI", sans-serif !important;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+}
+
+.hero p {
+  color: #eaf4ff !important;
+}
+
+/* Notice */
+.notice {
+  padding: 16px 19px;
+  margin: 12px 0 24px;
+  border: 1px solid #c9e5ef;
+  border-left: 4px solid #0e9f9a;
+  border-radius: 13px;
+  color: #29445c !important;
+  background: #edf8fb;
+}
+
+/* Page headings */
+h1, h2, h3, h4 {
+  color: #17243b !important;
+  font-family: "Manrope", "Segoe UI", sans-serif !important;
+}
+
+/* Tabs: set background and text on the actual BaseWeb tab buttons */
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[data-baseweb="tab"] {
+  background: #e2e8f0 !important;
+  color: #17243b !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #17243b !important;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[data-baseweb="tab"] p,
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[data-baseweb="tab"] span,
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[data-baseweb="tab"] div {
+  color: #17243b !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #17243b !important;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[data-baseweb="tab"][aria-selected="true"] {
+  background: #dbeafe !important;
+  color: #1d4ed8 !important;
+  -webkit-text-fill-color: #1d4ed8 !important;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[data-baseweb="tab"][aria-selected="true"] p,
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[data-baseweb="tab"][aria-selected="true"] span,
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[data-baseweb="tab"][aria-selected="true"] div {
+  color: #1d4ed8 !important;
+  -webkit-text-fill-color: #1d4ed8 !important;
+}
+
+/* Upload area */
+[data-testid="stFileUploader"] label,
+[data-testid="stFileUploader"] label *,
+[data-testid="stFileUploader"] section,
+[data-testid="stFileUploader"] section * {
+  color: #26364d !important;
+  -webkit-text-fill-color: #26364d !important;
+}
+
+[data-testid="stFileUploader"] section {
+  background: #f8fbff !important;
+  border: 1px dashed #9aacc2 !important;
+  border-radius: 13px !important;
+}
+
+/* Upload button */
+[data-testid="stFileUploader"] section button,
+[data-testid="stFileUploader"] section button * {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: #315ee7 !important;
+}
+
+/* Text fields and dropdowns */
+[data-testid="stTextInput"] input,
+[data-testid="stTextArea"] textarea,
+[data-baseweb="select"] > div {
+  color: #17243b !important;
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  border-radius: 10px !important;
+}
+
+/* Cards and expanders */
+[data-testid="stMetric"],
+[data-testid="stExpander"],
+[data-testid="stVerticalBlockBorderWrapper"] {
+  color: #17243b !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(28, 48, 78, .055);
+}
+
+[data-testid="stMetricValue"] {
+  color: #315ee7 !important;
+}
+
+[data-testid="stMetricLabel"] {
+  color: #64748b !important;
+}
+
+/* Buttons */
+.stButton > button,
+.stDownloadButton > button,
+[data-testid="stFormSubmitButton"] > button,
+[data-testid="stLinkButton"] > a {
+  color: #ffffff !important;
+  background: linear-gradient(105deg, #315ee7, #257fae) !important;
+  border: 0 !important;
+  border-radius: 11px;
+  font-weight: 700;
+}
+
+.stButton > button *,
+.stDownloadButton > button *,
+[data-testid="stFormSubmitButton"] > button *,
+[data-testid="stLinkButton"] > a * {
+  color: #ffffff !important;
+}
+
+/* Empty-start instructions */
+.empty-state {
+  padding: 26px;
+  margin: 18px 0;
+  color: #17243b !important;
+  background: linear-gradient(135deg, #ffffff, #f0f8fb);
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(28, 48, 78, .06);
+}
+
+.empty-state p {
+  color: #64748b !important;
+}
+
+.empty-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.empty-step {
+  padding: 15px;
+  color: #43566e !important;
+  background: #ffffff;
+  border: 1px solid #e1eaf3;
+  border-radius: 13px;
+}
+
+.empty-step strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #315ee7 !important;
+}
+
+@media (max-width: 700px) {
+  .block-container {
+    padding: 1rem 1rem 3rem;
+  }
+
+  .empty-steps {
+    grid-template-columns: 1fr;
+  }
+}
+/* Make empty text-entry boxes visible */
+[data-testid="stTextInput"] [data-baseweb="input"] {
+    background-color: #ffffff !important;
+    border: 2px solid #94a3b8 !important;
+    border-radius: 9px !important;
+    min-height: 40px !important;
+}
+
+[data-testid="stTextInput"] [data-baseweb="input"] input {
+    color: #17243b !important;
+    background-color: transparent !important;
+    caret-color: #17243b !important;
+}
+
+[data-testid="stTextInput"] [data-baseweb="input"]:hover {
+    border-color: #315ee7 !important;
+}
+
+[data-testid="stTextInput"] [data-baseweb="input"]:focus-within {
+    border-color: #315ee7 !important;
+    box-shadow: 0 0 0 3px rgba(49, 94, 231, 0.16) !important;
+}
+[data-testid="stTextInput"] input {
+    background-color: #ffffff !important;
+    color: #17243b !important;
+    border: 2px solid #94a3b8 !important;
+    border-radius: 9px !important;
+    min-height: 40px !important;
+}
+/* Draw a complete border around each text box */
+div[data-testid="stTextInput"] div[data-baseweb="input"] {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-height: 40px !important;
+    background: #ffffff !important;
+    border: 2px solid #222222 !important;
+    border-radius: 9px !important;
+    box-shadow: none !important;
+}
+
+/* Keep the typed text inside the bordered box */
+div[data-testid="stTextInput"] div[data-baseweb="input"] input {
+    box-sizing: border-box !important;
+    border: 0 !important;
+    outline: 0 !important;
+    background: transparent !important;
+    color: #17243b !important;
+    box-shadow: none !important;
+}
+
+/* Show a blue outline when the box is selected */
+div[data-testid="stTextInput"] div[data-baseweb="input"]:focus-within {
+    border-color: #315ee7 !important;
+    box-shadow: 0 0 0 3px rgba(49, 94, 231, 0.16) !important;
+}
+/* Draw a complete dark outline around the whole text-entry box */
+[data-testid="stTextInput"] [data-baseweb="input"] {
+    width: 100% !important;
+    min-height: 40px !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    border: 2px solid #111827 !important;
+    border-radius: 9px !important;
+    box-shadow: 0 0 0 2px #111827 !important;
+}
